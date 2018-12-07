@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+</head>
+<body>
+    <div id="panel">
+        <form id="addcomment">
+            <div class="avatar1"></div>
+            <input type="text" placeholder="Dodaj publiczny komentarz" required="" autocomplete="off">
+            <div id="bar"></div>
+            <input type="button" value="Cancel" name="cancel">
+            <input type="submit" value="Skomentuj" name="add">
+        </form>
+
+        <div id="divider"></div>
+
+        <ul id="mainul">
+            <li>
+                <div class="wholecomment">
+                    <div class="boxavatar">
+                        <div class="avatar"></div>
+                    </div>
+                    <div class="boxcontent">
+                        <div class="nick">Ross Geller</div>
+                        <div class="date">1 tydzień temu</div>
+                        <p class="comment">Test comment. lol dsfdsf dsfdsf sdfsdf  dsfdsf sdf sdf sdf sdf sdf sf  </p>
+                        <div class="fas fa-thumbs-up"></div>
+                        <div class="count">0</div>
+                        <div class="fas fa-thumbs-down"></div>
+                        <i class="fas fa-ban"></i>
+                        <i class="fas fa-edit"></i>
+                        <div class="answer">Odpowiedz</div>
+
+                        <form class="addcommentanswer" style="display: none;">
+                            <input type="text" placeholder="Dodaj odpowiedź publiczną" required="" autocomplete="off" name="inputanswer">
+                            <div class="barans"></div>
+                            <input type="submit" value="Odpowiedz" name="addans">
+                            <input type="button" value="Cancel" name="cancelans">
+                        </form>
+
+                        <div class="showanswers"><div class="number"></div></div>
+                        <ul class="ul" style="display: none;"> 
+
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+body{
+    padding: 0;
+    margin:0;
+}
+#panel {
+    margin:auto;
+    width:700px;
+    background-color: white;
+    text-align: center;
+    padding:10px;
+    display: block;
+    
+}
+.avatar1{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background-color: rgb(183, 223, 255);
+    border-radius: 50%;
+    top:30px;
+}
+input[type="text"] {
+    padding:0 5px;
+    margin-top:40px;
+    border:none;
+    font-size:18px;
+    font-family: Arial, sans-serif;
+    width:75%;
+}
+input[name="inputanswer"]{
+    width:550px;
+}
+.addcommentanswer input[name="inputanswer"] {
+    margin-top:10px;
+}
+#bar,
+.barans{
+    background-color:rgb(0, 106, 177);
+    height:4px;
+    width:0px;
+    transition: all .3s ease-in-out;
+    margin:20px auto;
+}
+input[name="cancel"] {
+    margin:10px 0;
+    background-color: transparent;
+    border:none;
+    font-size:18px;
+    padding:0 15px;
+    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 50px;
+    max-height:0px;
+    transition: max-height .5s ease-in-out;
+    float:right;
+    cursor: pointer;
+}
+input[name="add"] {
+    margin:10px 0;
+    border:none;
+    line-height: 50px;
+    padding:0px 15px;
+    font-size:18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color:white;
+    background-color: rgb(0, 106, 177);
+    max-height:0px;
+    transition: max-height .5s ease-in-out;
+    float:right;
+    cursor: pointer;
+}
+input[type="text"]:focus ~ input[name="cancel"],
+input[type="text"]:valid ~ input[name="cancel"]{
+max-height:60px;
+}
+input[type="text"]:focus ~ input[name="add"],
+input[type="text"]:valid ~ input[name="add"]{
+max-height:160px;
+}
+input[type="text"]:focus ~ #bar,
+input[type="text"]:valid ~ #bar{
+width:80%;
+}
+input[type="text"]:focus ~ .barans,
+input[type="text"]:valid ~ .barans{
+width:100%;
+}
+input[name="cancelans"]{
+    background-color: transparent;
+    border:none;
+    font-size:18px;
+    padding:15px;
+    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+input[name="addans"]{
+    font-size:18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color:white;
+    background-color: rgb(0, 59, 107);
+    border:none;
+    padding:10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+input[name="addans"]:hover{
+    background-color: rgb(0, 30, 54);
+}
+#divider{
+    margin:10px 0;
+    width:100%;
+    height:1px;
+    background-color:rgb(192, 192, 192);
+}
+#mainul,
+.ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul > li {
+    text-align: left;
+}
+.wholecomment{
+    float:left;
+}
+.boxavatar{
+    float:left;
+    margin-right:30px;
+}
+.boxcontent{
+    float:left;
+}
+.avatar{
+    height: 60px;
+    width: 60px;
+    background-color: rgb(183, 223, 255);
+    border-radius: 50%;
+}
+.nick{
+    display: inline-block;
+    padding-top:8px;
+    font-size:16px;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+}
+.date{
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    color:grey;
+}
+.answercomment{
+    width:550px;
+}
+.comment,
+.answercomment {
+    line-height: 26px;
+    margin: 0;
+    margin:12px 0;
+    font-size:18px;
+    font-family: Arial, sans-serif;
+    word-break: break-all; 
+}
+.fas{
+    color: grey;
+    display: inline-block;
+    padding: 5px;
+    margin-bottom:12px;
+}
+.fa-ban{
+    margin-left:20px;
+}
+.fa-ban:hover{
+    color:darkred;
+    cursor: pointer;
+}
+.count {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    color:grey;
+}
+.answer{
+    margin-bottom:12px;
+    margin-left: 20px;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color:grey;
+    cursor: pointer;
+}
+.answer:hover {
+    color:rgb(0, 0, 0);
+}
+.showanswers{
+    font-size:18px;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+.number {
+    display: inline-block;
+}
+.boxavataranswer{
+    float:left;
+    margin-right:20px;
+    margin-left:10px;
+    margin-top:10px;
+}
+.avataranswer{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(183, 223, 255);
+    border-radius: 50%;
+    margin-top:5px;
+}
+.fa-thumbs-up:hover {
+    color:green;
+    cursor: pointer;
+}
+.fa-thumbs-down:hover {
+    color:red;
+    cursor: pointer;
+}
+@media (max-width: 700px){
+    #panel{
+        width:90vw;
+    }
+    .avatar1,
+    .avatar,
+    .boxavataranswer {
+        display:none;
+    }
+    .answercomment{
+        width:auto;
+    }
+    input[name="inputanswer"]{
+        width:80vw;
+    }
+    .boxcontent{
+        width:90vw;
+    }
+}
